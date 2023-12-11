@@ -1,0 +1,52 @@
+<%= form_with(model: member_state) do |form| %>
+  <% if member_state.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(member_state.errors.count, "error") %> prohibited this member_state from being saved:</h2>
+
+      <ul>
+        <% member_state.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :entry_date, style: "display: block" %>
+    <%= form.date_field :entry_date %>
+  </div>
+
+  <div>
+    <%= form.label :capital, style: "display: block" %>
+    <%= form.text_field :capital %>
+  </div>
+
+  <div>
+    <%= form.label :population, style: "display: block" %>
+    <%= form.number_field :population %>
+  </div>
+
+  <div>
+    <%= form.label :number_meps, style: "display: block" %>
+    <%= form.number_field :number_meps %>
+  </div>
+
+  <div>
+    <%= form.label :euro_area_id, style: "display: block" %>
+    <%= form.text_field :euro_area_id %>
+  </div>
+
+  <div>
+    <%= form.label :schengen_area_id, style: "display: block" %>
+    <%= form.text_field :schengen_area_id %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,2 @@
+class SchengenArea < ApplicationRecord
+end

@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @member_state %>
+
+<div>
+  <%= link_to "Edit this member state", edit_member_state_path(@member_state) %> |
+  <%= link_to "Back to member states", member_states_path %>
+
+  <%= button_to "Destroy this member state", @member_state, method: :delete %>
+</div>

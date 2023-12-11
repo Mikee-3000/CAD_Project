@@ -4,7 +4,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 # dotenv-rails must go first, because it provides env vars to gems that might need them before they are loaded (eg. mongoid)
 gem 'dotenv-rails', require: 'dotenv/rails-now'
 
-gem 'mongoid'
+# PostgreSQL database
+gem 'pg', '~> 1.5', '>= 1.5.4'
 
 ruby "3.2.2"
 

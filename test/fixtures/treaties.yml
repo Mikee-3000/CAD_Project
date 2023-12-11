@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  date_of_signing: 2023-12-11
+  place_of_signing: MyString
+  active: false
+
+two:
+  name: MyString
+  date_of_signing: 2023-12-11
+  place_of_signing: MyString
+  active: false
