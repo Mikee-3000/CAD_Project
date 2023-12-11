@@ -1,0 +1,2 @@
+class EuroArea < ApplicationRecord
+end

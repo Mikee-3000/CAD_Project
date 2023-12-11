@@ -1,0 +1,47 @@
+<%= form_with(model: political_group) do |form| %>
+  <% if political_group.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(political_group.errors.count, "error") %> prohibited this political_group from being saved:</h2>
+
+      <ul>
+        <% political_group.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :abbreviation, style: "display: block" %>
+    <%= form.text_field :abbreviation %>
+  </div>
+
+  <div>
+    <%= form.label :short_description, style: "display: block" %>
+    <%= form.text_area :short_description %>
+  </div>
+
+  <div>
+    <%= form.label :president, style: "display: block" %>
+    <%= form.text_field :president %>
+  </div>
+
+  <div>
+    <%= form.label :current_meps, style: "display: block" %>
+    <%= form.number_field :current_meps %>
+  </div>
+
+  <div>
+    <%= form.label :link_to_website, style: "display: block" %>
+    <%= form.text_field :link_to_website %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

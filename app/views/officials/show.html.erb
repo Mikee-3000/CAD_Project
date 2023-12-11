@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @official %>
+
+<div>
+  <%= link_to "Edit this official", edit_official_path(@official) %> |
+  <%= link_to "Back to officials", officials_path %>
+
+  <%= button_to "Destroy this official", @official, method: :delete %>
+</div>

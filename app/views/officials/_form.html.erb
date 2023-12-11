@@ -1,0 +1,67 @@
+<%= form_with(model: official) do |form| %>
+  <% if official.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(official.errors.count, "error") %> prohibited this official from being saved:</h2>
+
+      <ul>
+        <% official.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :place_of_birth, style: "display: block" %>
+    <%= form.text_field :place_of_birth %>
+  </div>
+
+  <div>
+    <%= form.label :date_of_birth, style: "display: block" %>
+    <%= form.date_field :date_of_birth %>
+  </div>
+
+  <div>
+    <%= form.label :position, style: "display: block" %>
+    <%= form.text_field :position %>
+  </div>
+
+  <div>
+    <%= form.label :affiliation, style: "display: block" %>
+    <%= form.text_field :affiliation %>
+  </div>
+
+  <div>
+    <%= form.label :bio, style: "display: block" %>
+    <%= form.text_area :bio %>
+  </div>
+
+  <div>
+    <%= form.label :link_to_website, style: "display: block" %>
+    <%= form.text_field :link_to_website %>
+  </div>
+
+  <div>
+    <%= form.label :link_to_institution, style: "display: block" %>
+    <%= form.text_field :link_to_institution %>
+  </div>
+
+  <div>
+    <%= form.label :institution_id, style: "display: block" %>
+    <%= form.text_field :institution_id %>
+  </div>
+
+  <div>
+    <%= form.label :political_group_id, style: "display: block" %>
+    <%= form.text_field :political_group_id %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Officials</h1>
+
+<div id="officials">
+  <% @officials.each do |official| %>
+    <%= render official %>
+    <p>
+      <%= link_to "Show this official", official %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New official", new_official_path %>

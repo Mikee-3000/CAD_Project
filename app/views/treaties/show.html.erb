@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @treaty %>
+
+<div>
+  <%= link_to "Edit this treaty", edit_treaty_path(@treaty) %> |
+  <%= link_to "Back to treaties", treaties_path %>
+
+  <%= button_to "Destroy this treaty", @treaty, method: :delete %>
+</div>
