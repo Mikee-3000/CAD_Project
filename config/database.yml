@@ -7,10 +7,10 @@
 default: &default
   adapter: postgresql
   encoding: unicode
+  database: cad_project
 
 development:
   <<: *default
-  database: cad_project
   username: <%= ENV['DEV_DB_USERNAME'] %>
   password: <%= ENV['DEV_DB_PASSWORD'] %>
   host: <%= ENV['DEV_DB_HOST'] %>
@@ -18,6 +18,10 @@ development:
 
 test:
   <<: *default
+  username: <%= ENV['TEST_DB_USERNAME'] %>
+  password: <%= ENV['TEST_DB_PASSWORD'] %>
+  host: <%= ENV['TEST_DB_HOST'] %>
+  port: <%= ENV['TEST_DB_PORT'] %>
     #  database: db/test.sqlite3
 
 production:

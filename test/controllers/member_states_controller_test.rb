@@ -17,7 +17,7 @@ class MemberStatesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create member_state" do
     assert_difference("MemberState.count") do
-      post member_states_url, params: { member_state: { capital: @member_state.capital, entry_date: @member_state.entry_date, euro_area_id: @member_state.euro_area_id, name: @member_state.name, number_meps: @member_state.number_meps, population: @member_state.population, schengen_area_id: @member_state.schengen_area_id } }
+      post member_states_url, params: { member_state: { capital: @member_state.capital, entry_date: @member_state.entry_date, name: @member_state.name, number_meps: @member_state.number_meps, population: @member_state.population } }
     end
 
     assert_redirected_to member_state_url(MemberState.last)
@@ -34,7 +34,7 @@ class MemberStatesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update member_state" do
-    patch member_state_url(@member_state), params: { member_state: { capital: @member_state.capital, entry_date: @member_state.entry_date, euro_area_id: @member_state.euro_area_id, name: @member_state.name, number_meps: @member_state.number_meps, population: @member_state.population, schengen_area_id: @member_state.schengen_area_id } }
+    patch member_state_url(@member_state), params: { member_state: { capital: @member_state.capital, entry_date: @member_state.entry_date, name: @member_state.name, number_meps: @member_state.number_meps, population: @member_state.population } }
     assert_redirected_to member_state_url(@member_state)
   end
 

@@ -2,18 +2,12 @@
 
 one:
   name: MyString
-  entry_date: 2023-12-11
+  entry_date: 2023-12-13
   capital: MyString
   population: 1
   number_meps: 1
-  euro_area: one
-  schengen_area: one
 
 two:
   name: MyString
-  entry_date: 2023-12-11
+  entry_date: 2023-12-13
   capital: MyString
-  population: 1
-  number_meps: 1
-  euro_area: two
-  schengen_area: two

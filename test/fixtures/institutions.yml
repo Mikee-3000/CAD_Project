@@ -1,15 +1,16 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
+# This one has all information
 one:
-  name: MyString
-  date_established: 2023-12-11
-  geographical_seat: MyString
-  short_description: MyText
-  link_to_website: MyString
+  name: European Commission
+  date_established: 1958-01-16
+  seat: Brussels
+  description: Half of the EU legislative branch
+  website: https://ec.europa.eu/info/index_en
 
+# This one only nas needed information, needs to be created
 two:
   name: MyString
-  date_established: 2023-12-11
-  geographical_seat: MyString
-  short_description: MyText
-  link_to_website: MyString
+  date_established: 2023-12-13
+  seat: MyString
+  description: MyText

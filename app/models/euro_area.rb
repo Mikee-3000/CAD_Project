@@ -1,2 +1,0 @@
-class EuroArea < ApplicationRecord
-end

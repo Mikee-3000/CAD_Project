@@ -65,6 +65,6 @@ class MemberStatesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def member_state_params
-      params.require(:member_state).permit(:name, :entry_date, :capital, :population, :number_meps, :euro_area_id, :schengen_area_id)
+      params.require(:member_state).permit(:name, :entry_date, :capital, :population, :number_meps)
     end
 end

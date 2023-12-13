@@ -65,6 +65,6 @@ class OfficialsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def official_params
-      params.require(:official).permit(:name, :place_of_birth, :date_of_birth, :position, :affiliation, :bio, :link_to_website, :link_to_institution, :institution_id, :political_group_id)
+      params.require(:official).permit(:name, :place_of_birth, :date_of_birth, :position, :affiliation, :bio, :website, :institution_id, :political_group_id)
     end
 end

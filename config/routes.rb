@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
-  resources :officials
-  resources :member_states
-  resources :schengen_areas
-  resources :euro_areas
   resources :treaties
+  resources :officials
+  resources :member_state_areas
+  resources :member_states
+  resources :areas
   resources :political_parties
   resources :political_groups
   resources :institutions

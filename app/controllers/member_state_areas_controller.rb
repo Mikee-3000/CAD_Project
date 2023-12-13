@@ -1,0 +1,2 @@
+class MemberStateAreasController < ApplicationController
+end

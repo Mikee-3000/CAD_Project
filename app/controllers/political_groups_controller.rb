@@ -65,6 +65,6 @@ class PoliticalGroupsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def political_group_params
-      params.require(:political_group).permit(:name, :abbreviation, :short_description, :president, :current_meps, :link_to_website)
+      params.require(:political_group).permit(:name, :abbreviation, :description, :president, :current_meps, :website)
     end
 end
