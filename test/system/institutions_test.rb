@@ -15,10 +15,10 @@ class InstitutionsTest < ApplicationSystemTestCase
     click_on "New institution"
 
     fill_in "Date established", with: @institution.date_established
-    fill_in "Geographical seat", with: @institution.geographical_seat
-    fill_in "Link to website", with: @institution.link_to_website
+    fill_in "Description", with: @institution.description
     fill_in "Name", with: @institution.name
-    fill_in "Short description", with: @institution.short_description
+    fill_in "Seat", with: @institution.seat
+    fill_in "Website", with: @institution.website
     click_on "Create Institution"
 
     assert_text "Institution was successfully created"
@@ -30,10 +30,10 @@ class InstitutionsTest < ApplicationSystemTestCase
     click_on "Edit this institution", match: :first
 
     fill_in "Date established", with: @institution.date_established
-    fill_in "Geographical seat", with: @institution.geographical_seat
-    fill_in "Link to website", with: @institution.link_to_website
+    fill_in "Description", with: @institution.description
     fill_in "Name", with: @institution.name
-    fill_in "Short description", with: @institution.short_description
+    fill_in "Seat", with: @institution.seat
+    fill_in "Website", with: @institution.website
     click_on "Update Institution"
 
     assert_text "Institution was successfully updated"

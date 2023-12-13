@@ -17,7 +17,7 @@ class InstitutionsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create institution" do
     assert_difference("Institution.count") do
-      post institutions_url, params: { institution: { date_established: @institution.date_established, geographical_seat: @institution.geographical_seat, link_to_website: @institution.link_to_website, name: @institution.name, short_description: @institution.short_description } }
+      post institutions_url, params: { institution: { date_established: @institution.date_established, description: @institution.description, name: @institution.name, seat: @institution.seat, website: @institution.website } }
     end
 
     assert_redirected_to institution_url(Institution.last)
@@ -34,7 +34,7 @@ class InstitutionsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update institution" do
-    patch institution_url(@institution), params: { institution: { date_established: @institution.date_established, geographical_seat: @institution.geographical_seat, link_to_website: @institution.link_to_website, name: @institution.name, short_description: @institution.short_description } }
+    patch institution_url(@institution), params: { institution: { date_established: @institution.date_established, description: @institution.description, name: @institution.name, seat: @institution.seat, website: @institution.website } }
     assert_redirected_to institution_url(@institution)
   end
 

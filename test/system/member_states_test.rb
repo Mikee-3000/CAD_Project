@@ -16,11 +16,9 @@ class MemberStatesTest < ApplicationSystemTestCase
 
     fill_in "Capital", with: @member_state.capital
     fill_in "Entry date", with: @member_state.entry_date
-    fill_in "Euro area", with: @member_state.euro_area_id
     fill_in "Name", with: @member_state.name
     fill_in "Number meps", with: @member_state.number_meps
     fill_in "Population", with: @member_state.population
-    fill_in "Schengen area", with: @member_state.schengen_area_id
     click_on "Create Member state"
 
     assert_text "Member state was successfully created"
@@ -33,11 +31,9 @@ class MemberStatesTest < ApplicationSystemTestCase
 
     fill_in "Capital", with: @member_state.capital
     fill_in "Entry date", with: @member_state.entry_date
-    fill_in "Euro area", with: @member_state.euro_area_id
     fill_in "Name", with: @member_state.name
     fill_in "Number meps", with: @member_state.number_meps
     fill_in "Population", with: @member_state.population
-    fill_in "Schengen area", with: @member_state.schengen_area_id
     click_on "Update Member state"
 
     assert_text "Member state was successfully updated"

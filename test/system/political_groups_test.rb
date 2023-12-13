@@ -16,10 +16,10 @@ class PoliticalGroupsTest < ApplicationSystemTestCase
 
     fill_in "Abbreviation", with: @political_group.abbreviation
     fill_in "Current meps", with: @political_group.current_meps
-    fill_in "Link to website", with: @political_group.link_to_website
+    fill_in "Description", with: @political_group.description
     fill_in "Name", with: @political_group.name
     fill_in "President", with: @political_group.president
-    fill_in "Short description", with: @political_group.short_description
+    fill_in "Website", with: @political_group.website
     click_on "Create Political group"
 
     assert_text "Political group was successfully created"
@@ -32,10 +32,10 @@ class PoliticalGroupsTest < ApplicationSystemTestCase
 
     fill_in "Abbreviation", with: @political_group.abbreviation
     fill_in "Current meps", with: @political_group.current_meps
-    fill_in "Link to website", with: @political_group.link_to_website
+    fill_in "Description", with: @political_group.description
     fill_in "Name", with: @political_group.name
     fill_in "President", with: @political_group.president
-    fill_in "Short description", with: @political_group.short_description
+    fill_in "Website", with: @political_group.website
     click_on "Update Political group"
 
     assert_text "Political group was successfully updated"

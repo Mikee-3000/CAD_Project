@@ -2,14 +2,14 @@
 
 one:
   name: MyString
-  date_established: 2023-12-11
-  geographical_seat: MyString
-  short_description: MyText
-  link_to_website: MyString
+  date_established: 2023-12-13
+  seat: MyString
+  description: MyText
+  website: MyString
 
 two:
   name: MyString
-  date_established: 2023-12-11
-  geographical_seat: MyString
-  short_description: MyText
-  link_to_website: MyString
+  date_established: 2023-12-13
+  seat: MyString
+  description: MyText
+  website: MyString

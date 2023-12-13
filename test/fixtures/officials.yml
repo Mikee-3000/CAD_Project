@@ -3,23 +3,21 @@
 one:
   name: MyString
   place_of_birth: MyString
-  date_of_birth: 2023-12-11
+  date_of_birth: 2023-12-13
   position: MyString
   affiliation: MyString
   bio: MyText
-  link_to_website: MyString
-  link_to_institution: MyString
+  website: MyString
   institution: one
   political_group: one
 
 two:
   name: MyString
   place_of_birth: MyString
-  date_of_birth: 2023-12-11
+  date_of_birth: 2023-12-13
   position: MyString
   affiliation: MyString
   bio: MyText
-  link_to_website: MyString
-  link_to_institution: MyString
+  website: MyString
   institution: two
   political_group: two

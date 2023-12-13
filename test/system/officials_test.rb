@@ -18,12 +18,11 @@ class OfficialsTest < ApplicationSystemTestCase
     fill_in "Bio", with: @official.bio
     fill_in "Date of birth", with: @official.date_of_birth
     fill_in "Institution", with: @official.institution_id
-    fill_in "Link to institution", with: @official.link_to_institution
-    fill_in "Link to website", with: @official.link_to_website
     fill_in "Name", with: @official.name
     fill_in "Place of birth", with: @official.place_of_birth
     fill_in "Political group", with: @official.political_group_id
     fill_in "Position", with: @official.position
+    fill_in "Website", with: @official.website
     click_on "Create Official"
 
     assert_text "Official was successfully created"
@@ -38,12 +37,11 @@ class OfficialsTest < ApplicationSystemTestCase
     fill_in "Bio", with: @official.bio
     fill_in "Date of birth", with: @official.date_of_birth
     fill_in "Institution", with: @official.institution_id
-    fill_in "Link to institution", with: @official.link_to_institution
-    fill_in "Link to website", with: @official.link_to_website
     fill_in "Name", with: @official.name
     fill_in "Place of birth", with: @official.place_of_birth
     fill_in "Political group", with: @official.political_group_id
     fill_in "Position", with: @official.position
+    fill_in "Website", with: @official.website
     click_on "Update Official"
 
     assert_text "Official was successfully updated"

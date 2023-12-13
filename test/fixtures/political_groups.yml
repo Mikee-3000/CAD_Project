@@ -3,15 +3,15 @@
 one:
   name: MyString
   abbreviation: MyString
-  short_description: MyText
+  description: MyText
   president: MyString
   current_meps: 1
-  link_to_website: MyString
+  website: MyString
 
 two:
   name: MyString
   abbreviation: MyString
-  short_description: MyText
+  description: MyText
   president: MyString
   current_meps: 1
-  link_to_website: MyString
+  website: MyString

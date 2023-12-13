@@ -17,7 +17,7 @@ class PoliticalGroupsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create political_group" do
     assert_difference("PoliticalGroup.count") do
-      post political_groups_url, params: { political_group: { abbreviation: @political_group.abbreviation, current_meps: @political_group.current_meps, link_to_website: @political_group.link_to_website, name: @political_group.name, president: @political_group.president, short_description: @political_group.short_description } }
+      post political_groups_url, params: { political_group: { abbreviation: @political_group.abbreviation, current_meps: @political_group.current_meps, description: @political_group.description, name: @political_group.name, president: @political_group.president, website: @political_group.website } }
     end
 
     assert_redirected_to political_group_url(PoliticalGroup.last)
@@ -34,7 +34,7 @@ class PoliticalGroupsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update political_group" do
-    patch political_group_url(@political_group), params: { political_group: { abbreviation: @political_group.abbreviation, current_meps: @political_group.current_meps, link_to_website: @political_group.link_to_website, name: @political_group.name, president: @political_group.president, short_description: @political_group.short_description } }
+    patch political_group_url(@political_group), params: { political_group: { abbreviation: @political_group.abbreviation, current_meps: @political_group.current_meps, description: @political_group.description, name: @political_group.name, president: @political_group.president, website: @political_group.website } }
     assert_redirected_to political_group_url(@political_group)
   end
 
