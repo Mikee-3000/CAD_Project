@@ -22,4 +22,15 @@ class OfficialTest < ActiveSupport::TestCase
     refute @official.valid?
     assert_not_nil @official.errors[:position]
   end
+
+  test 'invalid with non-existent institution' do
+    @official.institution_id = Institution.maximum(:id) + 1
+    refute @official.valid?
+    assert_not_nil @official.errors[:institution]
+  end
+  test 'invalid with non-existent political group' do
+    @official.political_group_id = Institution.maximum(:id) + 1
+    refute @official.valid?
+    assert_not_nil @official.errors[:political_group]
+  end
 end
