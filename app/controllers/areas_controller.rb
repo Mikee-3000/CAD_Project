@@ -1,5 +1,6 @@
 class AreasController < ApplicationController
   before_action :set_area, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!, only: [:create, :update, :destroy, :edit, :new]
 
   # GET /areas or /areas.json
   def index

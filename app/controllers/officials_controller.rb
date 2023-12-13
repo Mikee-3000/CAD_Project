@@ -1,5 +1,6 @@
 class OfficialsController < ApplicationController
   before_action :set_official, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!, only: [:create, :update, :destroy, :edit, :new]
 
   # GET /officials or /officials.json
   def index

@@ -1,5 +1,6 @@
 class MemberStatesController < ApplicationController
   before_action :set_member_state, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!, only: [:create, :update, :destroy, :edit, :new]
 
   # GET /member_states or /member_states.json
   def index

@@ -1,5 +1,6 @@
 class InstitutionsController < ApplicationController
   before_action :set_institution, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!, only: [:create, :update, :destroy, :edit, :new]
 
   # GET /institutions or /institutions.json
   def index

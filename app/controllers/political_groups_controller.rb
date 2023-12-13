@@ -1,5 +1,6 @@
 class PoliticalGroupsController < ApplicationController
   before_action :set_political_group, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!, only: [:create, :update, :destroy, :edit, :new]
 
   # GET /political_groups or /political_groups.json
   def index

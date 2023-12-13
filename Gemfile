@@ -9,6 +9,9 @@ gem 'pg', '~> 1.5', '>= 1.5.4'
 
 ruby "3.2.2"
 
+# device for authentication
+gem 'devise', '~> 4.9', '>= 4.9.3'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.8"
 
