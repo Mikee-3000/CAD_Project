@@ -15,4 +15,9 @@ class PoliticalPartyTest < ActiveSupport::TestCase
     refute @political_party.valid?
     assert_not_nil @political_party.errors[:name]
   end
+  test 'invalid with non-existent political group' do
+    @political_party.political_group_id = Institution.maximum(:id) + 1
+    refute @political_party.valid?
+    assert_not_nil @political_party.errors[:political_group]
+  end
 end
