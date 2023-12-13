@@ -1,2 +1,0 @@
-class SchengenArea < ApplicationRecord
-end
