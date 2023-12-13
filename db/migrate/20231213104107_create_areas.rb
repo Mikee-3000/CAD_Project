@@ -1,6 +1,6 @@
 class CreateAreas < ActiveRecord::Migration[7.0]
   def change
-    create_table :areas do |t|
+    create_table :areas, if_not_exists: true  do |t|
       t.string :name
       t.text :description
 

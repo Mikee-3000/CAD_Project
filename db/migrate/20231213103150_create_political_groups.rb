@@ -1,7 +1,7 @@
 class CreatePoliticalGroups < ActiveRecord::Migration[7.0]
   def change
-    drop_table :political_groups
-    create_table :political_groups do |t|
+    drop_table :political_groups, if_exists: true
+    create_table :political_groups, if_not_exists: true  do |t|
       t.string :name
       t.string :abbreviation
       t.text :description
