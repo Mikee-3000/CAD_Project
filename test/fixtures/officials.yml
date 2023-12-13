@@ -13,11 +13,4 @@ one:
 
 two:
   name: MyString
-  place_of_birth: MyString
-  date_of_birth: 2023-12-13
   position: MyString
-  affiliation: MyString
-  bio: MyText
-  website: MyString
-  institution: two
-  political_group: two

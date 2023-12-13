@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_12_13_112247) do
+ActiveRecord::Schema[7.0].define(version: 2023_12_13_135633) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -58,8 +58,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_12_13_112247) do
     t.string "affiliation"
     t.text "bio"
     t.string "website"
-    t.bigint "institution_id", null: false
-    t.bigint "political_group_id", null: false
+    t.bigint "institution_id"
+    t.bigint "political_group_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["institution_id"], name: "index_officials_on_institution_id"
@@ -79,7 +79,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_12_13_112247) do
 
   create_table "political_parties", force: :cascade do |t|
     t.string "name"
-    t.bigint "political_group_id", null: false
+    t.bigint "political_group_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["political_group_id"], name: "index_political_parties_on_political_group_id"

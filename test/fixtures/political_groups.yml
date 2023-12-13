@@ -10,8 +10,4 @@ one:
 
 two:
   name: MyString
-  abbreviation: MyString
   description: MyText
-  president: MyString
-  current_meps: 1
-  website: MyString

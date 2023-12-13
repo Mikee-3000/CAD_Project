@@ -1,4 +1,4 @@
 class MemberStateArea < ApplicationRecord
-  belongs_to :MemberState
-  belongs_to :Area
+  belongs_to :member_state
+  belongs_to :area
 end
