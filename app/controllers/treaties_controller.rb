@@ -1,5 +1,6 @@
 class TreatiesController < ApplicationController
   before_action :set_treaty, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!, only: [:create, :update, :destroy, :edit, :new]
 
   # GET /treaties or /treaties.json
   def index
